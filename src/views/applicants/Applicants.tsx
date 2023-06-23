@@ -6,7 +6,7 @@ const Applicants = () => {
   return (
     <div>
       <div>
-          Applicants
+          Applicants 
       </div>
       <Link to="/applicants/edit-applicants:11">Edit</Link>
       <button>do nth</button>
