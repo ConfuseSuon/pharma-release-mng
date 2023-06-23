@@ -1,12 +1,13 @@
 import { lazy } from 'react';
 
 // project imports
-import MainLayout from 'layout/MainLayout';
-import Loadable from 'ui-component/Loadable';
+
+import MainLayout from '../layout/MainLayout';
+import Loadable from '../ui-component/Loadable';
 // import { Outlet } from 'react-router';
 
 // dashboard routing
-const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
+const DashboardDefault = Loadable(lazy(() => import('../views/dashboard/Default')));
 
 // utilities routing
 // const UtilsTypography = Loadable(lazy(() => import('views/utilities/Typography')));
@@ -20,8 +21,8 @@ const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')))
 // import New from 'views/utilities/New';
 
 // ==============================|| MAIN ROUTING ||============================== //
-const ApplicantPage = Loadable(lazy(() => import('views/applicants/Applicants')));
-const EditApplicants = Loadable(lazy(() => import('views/applicants/EditApplicants')));
+const ApplicantPage = Loadable(lazy(() => import('../views/applicants/Applicants')));
+const EditApplicants = Loadable(lazy(() => import('../views/applicants/EditApplicants')));
 const MainRoutes = {
   path: '/',
   element: <MainLayout />,

@@ -9,7 +9,7 @@ import { Avatar, Box, ButtonBase, Card, Grid, InputAdornment, OutlinedInput, Pop
 import PopupState, { bindPopper, bindToggle } from 'material-ui-popup-state';
 
 // project imports
-import Transitions from 'ui-component/extended/Transitions';
+import Transitions from '../../../../ui-component/extended/Transitions';
 
 // assets
 import { IconAdjustmentsHorizontal, IconSearch, IconX } from '@tabler/icons';
@@ -58,7 +58,7 @@ const HeaderAvatarStyle = styled<any>(Avatar, { shouldForwardProp })(({ theme })
 
 // ==============================|| SEARCH INPUT - MOBILE||============================== //
 
-const MobileSearch = ({ value, setValue, popupState }) => {
+const MobileSearch = ({ value, setValue, popupState }:any) => {
   const theme:any = useTheme();
 
   return (
@@ -133,7 +133,7 @@ const SearchSection = () => {
                 </ButtonBase>
               </Box>
               <PopperStyle {...bindPopper(popupState)} transition>
-                {({ TransitionProps }) => (
+                {({ TransitionProps }:any) => (
                   <>
                     <Transitions type="zoom" {...TransitionProps} sx={{ transformOrigin: 'center left' }}>
                       <Card

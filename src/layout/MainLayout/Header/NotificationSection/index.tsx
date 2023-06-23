@@ -25,8 +25,8 @@ import {
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
 // project imports
-import MainCard from 'ui-component/cards/MainCard';
-import Transitions from 'ui-component/extended/Transitions';
+import MainCard from '../../../../ui-component/cards/MainCard';
+import Transitions from '../../../../ui-component/extended/Transitions';
 import NotificationList from './NotificationList';
 
 // assets
@@ -63,7 +63,7 @@ const NotificationSection = () => {
   /**
    * anchorRef is used on different componets and specifying one type leads to other components throwing an error
    * */
-  const anchorRef = useRef(null);
+  const anchorRef = useRef<any>(null);
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -84,7 +84,7 @@ const NotificationSection = () => {
     prevOpen.current = open;
   }, [open]);
 
-  const handleChange = (event) => {
+  const handleChange = (event:any) => {
     if (event?.target.value) setValue(event?.target.value);
   };
 

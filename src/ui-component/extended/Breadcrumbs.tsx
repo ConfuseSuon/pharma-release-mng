@@ -8,8 +8,8 @@ import { Box, Card, Divider, Grid, Typography } from '@mui/material';
 import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
 
 // project imports
-import config from 'config';
-import { gridSpacing } from 'store/constant';
+import config from '../../config';
+import { gridSpacing } from '../../store/constant';
 
 // assets
 import { IconTallymark1 } from '@tabler/icons';
@@ -28,7 +28,7 @@ const linkSX = {
 // ==============================|| BREADCRUMBS ||============================== //
 
 const Breadcrumbs = ({ card, divider, icon, icons, maxItems, navigation, rightAlign, separator, title, titleBottom, ...others }:any) => {
-  const theme = useTheme();
+  const theme = useTheme<any>();
 
   const iconStyle = {
     marginRight: theme.spacing(0.75),
