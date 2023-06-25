@@ -15,8 +15,8 @@ import { IconMenu2 } from '@tabler/icons';
 
 // ==============================|| MAIN NAVBAR / HEADER ||============================== //
 
-const Header = ({ handleLeftDrawerToggle }) => {
-  const theme:any = useTheme();
+const Header = ({ handleLeftDrawerToggle }:any) => {
+  const theme = useTheme<any>();
 
   return (
     <>
