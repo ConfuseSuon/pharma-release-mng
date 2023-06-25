@@ -16,7 +16,7 @@ import { IconChevronDown, IconChevronUp } from '@tabler/icons';
 
 // ==============================|| SIDEBAR MENU LIST COLLAPSE ITEMS ||============================== //
 
-const NavCollapse = ({ menu, level }) => {
+const NavCollapse = ({ menu, level }:any) => {
   const theme:any = useTheme();
   const customization = useSelector((state:any) => state.customization);
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ const NavCollapse = ({ menu, level }) => {
     setOpen(false);
     setSelected(null);
     if (menu.children) {
-      menu.children.forEach((item) => {
+      menu.children.forEach((item:any) => {
         if (item.children?.length) {
           checkOpenForParent(item.children, menu.id);
         }
@@ -62,7 +62,7 @@ const NavCollapse = ({ menu, level }) => {
   }, [pathname, menu.children]);
 
   // menu collapse & item
-  const menus = menu.children?.map((item) => {
+  const menus = menu.children?.map((item:any) => {
     switch (item.type) {
       case 'collapse':
         return <NavCollapse key={item.id} menu={item} level={level + 1} />;

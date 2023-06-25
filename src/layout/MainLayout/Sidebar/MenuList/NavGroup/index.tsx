@@ -10,7 +10,7 @@ import NavCollapse from '../NavCollapse';
 
 // ==============================|| SIDEBAR MENU LIST GROUP ||============================== //
 
-const NavGroup = ({ item }) => {
+const NavGroup = ({ item }:any) => {
   const theme:any = useTheme();
 
   // menu list collapse & items

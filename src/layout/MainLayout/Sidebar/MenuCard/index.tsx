@@ -32,7 +32,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   }
 }));
 
-const CardStyle = styled(Card)(({ theme }) => ({
+const CardStyle = styled(Card)(({ theme }:any) => ({
   background: theme.palette.primary.light,
   marginBottom: '22px',
   overflow: 'hidden',
@@ -51,8 +51,8 @@ const CardStyle = styled(Card)(({ theme }) => ({
 
 // ==============================|| PROGRESS BAR WITH LABEL ||============================== //
 
-function LinearProgressWithLabel({ value, ...others }) {
-  const theme = useTheme();
+function LinearProgressWithLabel({ value, ...others }:any) {
+  const theme = useTheme<any>();
 
   return (
     <Grid container direction="column" spacing={1} sx={{ mt: 1.5 }}>

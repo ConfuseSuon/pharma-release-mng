@@ -36,7 +36,7 @@ const ListItemWrapper = styled('div')(({ theme }) => ({
 // ==============================|| NOTIFICATION LIST ITEM ||============================== //
 
 const NotificationList = () => {
-  const theme:any = useTheme();
+  const theme = useTheme<any>();
 
   const chipSX = {
     height: 24,

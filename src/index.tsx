@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import React from 'react'
+
 
 // third party
 import { BrowserRouter } from 'react-router-dom';
