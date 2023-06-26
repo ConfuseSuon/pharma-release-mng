@@ -16,7 +16,7 @@ import config from './config';
 
 // ==============================|| REACT DOM RENDER  ||============================== //
 
-const container = document.getElementById('root');
+// const container = document.getElementById('root');
 // createRoot(container!) if you use TypeScript
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <Provider store={store}>

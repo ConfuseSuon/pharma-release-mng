@@ -6,7 +6,7 @@ import MuiAvatar from '@mui/material/Avatar';
 
 // ==============================|| AVATAR ||============================== //
 
-const Avatar:any = ({ color, outline, size, sx, ...others }) => {
+const Avatar:any = ({ color, outline, size, sx, ...others }:any) => {
   const theme = useTheme();
 
   const colorSX = color && !outline && { color: theme.palette.background.paper, bgcolor: `${color}.main` };

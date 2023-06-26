@@ -15,7 +15,7 @@ import NavigationScroll from './layout/NavigationScroll';
 
 // ==============================|| APP ||============================== //
 type RootState = {
-  customization: unknown;
+  customization: any;
 }
 const App = () => {
   const customization = useSelector((state: RootState) => state.customization);

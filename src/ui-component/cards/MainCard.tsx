@@ -30,7 +30,7 @@ const MainCard = forwardRef(
     }:any,
     ref
   ) => {
-    const theme = useTheme();
+    const theme = useTheme<any>();
 
     return (
       <Card
