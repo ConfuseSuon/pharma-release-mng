@@ -55,11 +55,11 @@ const status = [
 // ==============================|| NOTIFICATION ||============================== //
 
 const NotificationSection = () => {
-  const theme:any = useTheme();
+  const theme = useTheme<any>();
   const matchesXs = useMediaQuery(theme.breakpoints.down('md'));
 
-  const [open, setOpen] = useState(false);
-  const [value, setValue] = useState('');
+  const [open, setOpen] = useState<boolean>(false);
+  const [value, setValue] = useState<string>('');
   /**
    * anchorRef is used on different componets and specifying one type leads to other components throwing an error
    * */

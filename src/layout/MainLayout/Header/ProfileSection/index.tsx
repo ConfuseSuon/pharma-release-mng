@@ -44,7 +44,7 @@ type RootState = {
   customization:any
 }
 const ProfileSection = () => {
-  const theme:any = useTheme();
+  const theme = useTheme<any>();
   const customization = useSelector((state:RootState) => state.customization);
   const navigate = useNavigate();
 

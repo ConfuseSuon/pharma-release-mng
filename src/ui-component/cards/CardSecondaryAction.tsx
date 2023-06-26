@@ -7,8 +7,8 @@ import Avatar from '../extended/Avatar';
 
 // ==============================|| CARD SECONDARY ACTION ||============================== //
 
-const CardSecondaryAction = ({ title, link, icon }) => {
-  const theme = useTheme();
+const CardSecondaryAction = ({ title, link, icon }:any) => {
+  const theme = useTheme<any>();
 
   return (
     <Tooltip title={title || 'Reference'} placement="left">
