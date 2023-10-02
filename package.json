@@ -1,6 +1,6 @@
 {
-  "name": "cv-manager",
-  "version": "3.3.2",
+  "name": "pharma-release-mng",
+  "version": "1.0.0",
   "private": true,
   "homepage": "",
   "dependencies": {
@@ -38,7 +38,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
